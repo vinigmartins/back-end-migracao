@@ -1,0 +1,389 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "migracao_back",
+    "dateExported": "2023-05-22T23:31:13.934Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "06d37e56-c14a-49e8-92f6-fe9c67033a6b",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "SingUpPost",
+            "url": "{{api}}signup",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-05-22T22:22:16.654Z",
+            "modified": "2023-05-22T22:45:00.273Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Lucas\",\n  \"usuario\": \"lucas.debatin3\",\n  \"senha\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.access_token",
+                    "action": "setto",
+                    "value": "{{access_token}}"
+                }
+            ]
+        },
+        {
+            "_id": "5ccc78d3-391c-498b-a77c-7b8cb80e1c54",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "LoginPost ",
+            "url": "{{api}}login",
+            "method": "POST",
+            "sortNum": 7500,
+            "created": "2023-05-22T22:22:16.655Z",
+            "modified": "2023-05-22T22:38:19.220Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"ze\",\n  \"senha\": \"zepe\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.access_token",
+                    "action": "setto",
+                    "value": "{{access_token}}"
+                }
+            ]
+        },
+        {
+            "_id": "0555ddaa-5138-455b-a159-db40caac6231",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "UsuariosPost",
+            "url": "{{api}}usuario",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-22T22:22:16.656Z",
+            "modified": "2023-05-22T22:45:15.317Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Lucas\",\n  \"usuario\": \"lucas.debatin4\",\n  \"senha\": \"123456\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a30572f-67d3-4db3-bd55-3093674464a1",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "UsuariosPut",
+            "url": "{{api}}usuario/1",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-05-22T22:22:16.657Z",
+            "modified": "2023-05-22T23:06:32.966Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Lucas Debatin\",\n  \"usuario\": \"lucas.debatin5\",\n  \"senha\": \"\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f309f8ca-56ce-4198-bfc8-9e8bf62cb92b",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "UsuariosDelete",
+            "url": "{{api}}usuario/4",
+            "method": "DELETE",
+            "sortNum": 17500,
+            "created": "2023-05-22T22:22:16.658Z",
+            "modified": "2023-05-22T23:08:15.187Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a90b6bd2-ceb8-4960-851d-c505101d567c",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "UsuariosGetById",
+            "url": "{{api}}usuario/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-22T22:22:16.659Z",
+            "modified": "2023-05-22T23:08:28.711Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9ba9e43d-62b4-4628-a3e1-2bae076eb9dc",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "UsuariosGetAll",
+            "url": "{{api}}usuario",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-22T22:22:16.660Z",
+            "modified": "2023-05-22T22:39:58.412Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2f6bca0b-87c9-428b-8fa6-f6efbcb244c3",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "MigracaoPost",
+            "url": "{{api}}migracao",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2023-05-22T22:22:16.661Z",
+            "modified": "2023-05-22T23:22:37.448Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Converter dwm para java\",\n  \"usuario_ids\": [1]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4c1ddf0-e471-4584-b616-e5380645a585",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "MigracaoPut",
+            "url": "{{api}}migracao/1",
+            "method": "PUT",
+            "sortNum": 37500,
+            "created": "2023-05-22T22:22:16.662Z",
+            "modified": "2023-05-22T23:12:54.316Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Converter dwm para java\",\n  \"usuario_ids\": [1]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6fac42e5-379e-4134-a4ac-f7379fc376da",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "MigracaoDelete",
+            "url": "{{api}}migracao/2",
+            "method": "DELETE",
+            "sortNum": 38750,
+            "created": "2023-05-22T22:22:16.664Z",
+            "modified": "2023-05-22T23:15:38.458Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6f49975d-2499-4805-9e1d-8128e912e913",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "MigracaoGetById",
+            "url": "{{api}}migracao/2",
+            "method": "GET",
+            "sortNum": 39375,
+            "created": "2023-05-22T22:22:16.665Z",
+            "modified": "2023-05-22T23:15:25.733Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad007f26-b9a1-4dbd-bebe-06cfb7b48ae1",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "MigracaoGetAll",
+            "url": "{{api}}migracao?limit=10&offset=0",
+            "method": "GET",
+            "sortNum": 39687.5,
+            "created": "2023-05-22T22:22:16.666Z",
+            "modified": "2023-05-22T23:16:19.278Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "10",
+                    "isPath": false
+                },
+                {
+                    "name": "offset",
+                    "value": "0",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7813acce-936c-40fa-9c38-b3631948d2f3",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "NotificacaoPost",
+            "url": "{{api}}notificacao",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-22T22:22:16.667Z",
+            "modified": "2023-05-22T23:27:44.875Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 1,\n  \"texto\": \"voce foi adicionado na migracao tal\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ce0f15f-8bdf-429e-b84d-08f51ec05b49",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "NotificacaoPut",
+            "url": "{{api}}notificacao/5",
+            "method": "PUT",
+            "sortNum": 45000,
+            "created": "2023-05-22T22:22:16.668Z",
+            "modified": "2023-05-22T23:28:37.111Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 1,\n  \"texto\": \"voce foi adicionado na migracao x\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bf4a272c-47ae-48c2-9d30-ba6a2bf9bc63",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "NotificacaoDelete",
+            "url": "{{api}}notificacao/3",
+            "method": "DELETE",
+            "sortNum": 47500,
+            "created": "2023-05-22T23:25:06.455Z",
+            "modified": "2023-05-22T23:30:27.126Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8da21213-bbe8-436f-932f-031ede98973f",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "NotificacaoGetById",
+            "url": "{{api}}notificacao/3",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-05-22T22:22:16.669Z",
+            "modified": "2023-05-22T23:30:56.283Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c5bc3470-397d-4059-8e2a-6eafc343c31c",
+            "colId": "7b7ed7d6-7bc8-404e-9518-dc08f8923301",
+            "containerId": "",
+            "name": "NotificacaoGetAll",
+            "url": "{{api}}notificacao?limit=10&offset=0",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-05-22T22:22:16.670Z",
+            "modified": "2023-05-22T23:29:55.560Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "10",
+                    "isPath": false
+                },
+                {
+                    "name": "offset",
+                    "value": "0",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "{{access_token}}"
+        }
+    }
+}
